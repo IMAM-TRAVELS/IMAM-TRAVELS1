@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umrah & Hajj Packages | IMAM TRAVELS & TOURS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap&font-display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css files/umrah_hajj.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <div id="scroll-progress"></div>
+    <nav>
+      <a href="INDEX.HTML#home" class="logo">
+        <img src="assets/image/imam travel and tours logo.jpeg" alt="IMAM TRAVELS & TOURS"> 
+        IMAM TRAVELS &<span> TOURS</span>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="ticketing.html">Ticketing</a></li>
+        <li><a href="umrah_hajj.html" class="active">Umrah & Hajj</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <div id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></div>
+        <a href="index.html#contact" class="header-cta" aria-label="Book a trip now">Book Now</a>
+        <div class="hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section id="umrah-hero" class="reveal active">
+      <div class="hero-gallery">
+        <div class="hero-image active" style="background-image: url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=1920&q=80');">
+          <div class="hero-label">Al-Haram, Makkah</div>
+        </div>
+        <div class="hero-image" style="background-image: url('https://wallpapers.com/images/hd/kaaba-holy-shrine-makkah-hd-tluoz3uwyxn4n4fa.jpg');">
+          <div class="hero-label">Holy Kaaba</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> / <span>Umrah & Hajj</span>
+        </div>
+        <h1>Spiritual Journeys of a Lifetime</h1>
+        <p>Experience a seamless and sacred pilgrimage with our premium Umrah and Hajj packages tailored for your comfort.</p>
+      </div>
+      <div class="gallery-controls">
+        <button class="gallery-prev" onclick="prevHeroImage()"><i class="fas fa-chevron-left"></i></button>
+        <button class="gallery-next" onclick="nextHeroImage()"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="gallery-dots">
+        <span class="dot active" onclick="currentHeroImage(0)"></span>
+        <span class="dot" onclick="currentHeroImage(1)"></span>
+        <span class="dot" onclick="currentHeroImage(2)"></span>
+        <span class="dot" onclick="currentHeroImage(3)"></span>
+      </div>
+    </section>
+
+    <section id="package-inquiry">
+      <div class="container">
+        <div class="booking-card">
+          <form class="advanced-ticket-form">
+            <div class="form-grid">
+              <div class="input-group">
+                <label><i class="fas fa-kaaba"></i> Package Type</label>
+                <select>
+                  <option>Economy Package</option>
+                  <option>Standard Package</option>
+                  <option>Premium Gold Package</option>
+                  <option>Hajj 2026 Registration</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label><i class="fas fa-calendar-check"></i> Tentative Date</label>
+                <input type="date" id="travel-date">
+              </div>
+              <div class="input-group">
+                <label><i class="fas fa-users"></i> Number of Persons</label>
+                <input type="number" min="1" placeholder="Total Pilgrims">
+              </div>
+              <div class="input-group">
+                <label><i class="fas fa-hotel"></i> Room Type</label>
+                <select>
+                  <option>Sharing (4 Persons)</option>
+                  <option>Triple Sharing</option>
+                  <option>Double Sharing</option>
+                  <option>Private Room</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="cta-button" style="width: 100%; margin-top: 2rem;">Inquire Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-highlights" class="reveal">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-file-signature"></i>
+            <h3>Visa Processing</h3>
+            <p>Complete assistance with Umrah and Hajj visa documentation and fast-track processing.</p>
+            <a href="#package-inquiry" class="view-deal">Get Started</a>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-bus"></i>
+            <h3>Luxury Transport</h3>
+            <p>Comfortable ground transportation between Makkah, Madinah, and Jeddah airports.</p>
+            <a href="#package-inquiry" class="view-deal">Get Started</a>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-mosque"></i>
+            <h3>Ziyarats</h3>
+            <p>Guided tours to historical and sacred sites in the holy cities with experienced guides.</p>
+            <a href="#package-inquiry" class="view-deal">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGE COMPARISON -->
+    <section id="package-comparison" class="reveal">
+      <div class="container">
+        <h2>Choose Your Perfect Package</h2>
+        <div class="package-table-wrapper">
+          <table class="package-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Economy</th>
+                <th>Standard</th>
+                <th class="featured">Premium Gold</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Duration</strong></td>
+                <td>8 Days</td>
+                <td>10 Days</td>
+                <td>12 Days</td>
+              </tr>
+              <tr>
+                <td><strong>Accommodation</strong></td>
+                <td>4-Bed Sharing</td>
+                <td>3-Bed Sharing</td>
+                <td>Double Sharing</td>
+              </tr>
+              <tr>
+                <td><strong>Hotel Rating</strong></td>
+                <td>3-Star</td>
+                <td>4-Star</td>
+                <td>5-Star</td>
+              </tr>
+              <tr>
+                <td><strong>Distance from Haram</strong></td>
+                <td>2-3 km</td>
+                <td>1-2 km</td>
+                <td>&lt; 1 km</td>
+              </tr>
+              <tr>
+                <td><strong>Visa Processing</strong></td>
+                <td><i class="fas fa-check" style="color: green;"></i></td>
+                <td><i class="fas fa-check" style="color: green;"></i></td>
+                <td><i class="fas fa-check" style="color: green;"></i></td>
+              </tr>
+              <tr>
+                <td><strong>Guided Ziyarats</strong></td>
+                <td>2 Tours</td>
+                <td>4 Tours</td>
+                <td>7 Tours</td>
+              </tr>
+              <tr>
+                <td><strong>Meals</strong></td>
+                <td>Basic</td>
+                <td>Standard</td>
+                <td>Premium</td>
+              </tr>
+              <tr>
+                <td><strong>Transport</strong></td>
+                <td>Shared</td>
+                <td>Semi-Shared</td>
+                <td>Private</td>
+              </tr>
+              <tr>
+                <td><strong>Price Per Person</strong></td>
+                <td><strong>PKR 149,900</strong></td>
+                <td><strong>PKR 249,900</strong></td>
+                <td><strong>PKR 399,900</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITINERARY SECTION -->
+    <section id="itinerary" class="reveal">
+      <div class="container">
+        <h2>Sample 10-Day Itinerary</h2>
+        <div class="itinerary-timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="day">Day 1</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Arrival in Jeddah</h3>
+              <ul>
+                <li>Arrival at Jeddah Airport</li>
+                <li>Welcome & orientation</li>
+                <li>Transfer to Makkah</li>
+                <li>Check-in at hotel</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="day">Day 2</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Umrah Ritual</h3>
+              <ul>
+                <li>Ihram and Tawaf (Circumambulation)</li>
+                <li>Sai (Running between hills)</li>
+                <li>Taqsir (Hair cutting)</li>
+                <li>Mandatory prayers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="day">Days 3-5</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Makkah & Ziyarats</h3>
+              <ul>
+                <li>Additional Umrahs</li>
+                <li>Guided tours to Uhud Mountain</li>
+                <li>Visit to Islamic sites</li>
+                <li>Free time for shopping & rest</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="day">Days 6-8</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Madinah Visit</h3>
+              <ul>
+                <li>Travel to Madinah (4-5 hours)</li>
+                <li>Visit Prophet's Mosque</li>
+                <li>Guided historical tours</li>
+                <li>Visit to Quba Mosque</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="day">Days 9-10</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Return Journey</h3>
+              <ul>
+                <li>Travel back to Makkah</li>
+                <li>Final prayers at Haram</li>
+                <li>Airport transfer</li>
+                <li>Departure for home</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED -->
+    <section id="whats-included" class="reveal">
+      <div class="container">
+        <h2>What's Included in Your Package</h2>
+        <div class="included-grid">
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Visa Assistance</h3>
+            <p>Complete visa processing and documentation</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Airport Transfers</h3>
+            <p>Pick-up and drop-off from airports</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Accommodation</h3>
+            <p>Premium hotel stays in holy cities</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Meals</h3>
+            <p>Daily breakfast, lunch and dinner</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Transportation</h3>
+            <p>AC coaches between cities</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Guided Tours</h3>
+            <p>Expert guides for all ziyarats</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>24/7 Support</h3>
+            <p>Round-the-clock assistance</p>
+          </div>
+          <div class="include-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Travel Insurance</h3>
+            <p>Comprehensive coverage included</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="pilgrim-testimonials" class="reveal">
+      <div class="container">
+        <h2>Testimonials from Our Pilgrims</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"An unforgettable spiritual experience! The team took care of everything perfectly. Alhamdulillah!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/50?u=pilgrim1">
+              <div>
+                <p class="name">Mr. Abdullah</p>
+                <p class="title">Umrah 2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Best pilgrimage package! Hotels were excellent and guides were very knowledgeable. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/50?u=pilgrim2">
+              <div>
+                <p class="name">Mrs. Aisha</p>
+                <p class="title">Umrah 2025</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Professional service from booking to return. The team pampered us throughout our journey. Mashallah!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/50?u=pilgrim3">
+              <div>
+                <p class="name">Mr. Hassan</p>
+                <p class="title">Umrah 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HAJJ INFO -->
+    <section id="hajj-info" class="reveal">
+      <div class="container">
+        <h2>Hajj Information & Guidance</h2>
+        <div class="hajj-cards-grid">
+          <div class="info-card">
+            <i class="fas fa-check"></i>
+            <h3>Eligibility</h3>
+            <p>Learn about Hajj eligibility requirements, physical fitness guidelines, and visa prerequisites.</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-calendar-alt"></i>
+            <h3>Timing</h3>
+            <p>Hajj is performed during the Islamic month of Dhul-Hijjah. Planning starts 6-12 months in advance.</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-heart"></i>
+            <h3>Spiritual Preparation</h3>
+            <p>We provide religious guidance and preparation materials to make your journey more meaningful.</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone"></i>
+            <h3>24/7 Support</h3>
+            <p>Dedicated team members are available round-the-clock during your pilgrimage for any assistance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="umrah-faq" class="reveal">
+      <div class="container">
+        <h2>Umrah & Hajj FAQs</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">What is the best time for Umrah? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>Umrah can be performed year-round. However, Rajab, Shaaban, and Ramadan are considered excellent months. Winter months (November-January) are also comfortable due to cooler weather.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How long does Umrah take? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>The rituals of Umrah itself take 2-3 hours. However, most packages are 7-10 days to allow for multiple Umrahs, rest, and visits to other holy sites.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can women go for Umrah alone? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>Women can perform Umrah with or without a Mahram (male guardian). However, for group packages, we recommend traveling with family or joining organized group tours for safety.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How much does Hajj cost? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>Hajj package costs range from PKR 399,900 to PKR 899,900 depending on accommodation quality and services included. Visa quota and limited seats affect availability.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What is included in the package? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>All our packages include visa processing, accommodation, meals, ground transportation, airport transfers, guides, and 24/7 support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <div class="logo">IMAM TRAVELS &<span> TOURS</span></div>
+        <p>Exploring the world one destination at a time. Join us for unforgettable journeys.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest travel deals.</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Your Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 IMAM TRAVELS & TOURS. Made with <i class="fas fa-heart" style="color: var(--accent-color);"></i> for travelers.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+    const preloader = document.getElementById('preloader');
+    const scrollProgress = document.getElementById('scroll-progress');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // ========== HERO GALLERY FUNCTIONS ==========
+    let currentImageIndex = 0;
+
+    function showHeroImage(n) {
+      const images = document.querySelectorAll('.hero-image');
+      const dots = document.querySelectorAll('.dot');
+
+      if (n >= images.length) currentImageIndex = 0;
+      if (n < 0) currentImageIndex = images.length - 1;
+
+      images.forEach(img => img.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+
+      images[currentImageIndex].classList.add('active');
+      dots[currentImageIndex].classList.add('active');
+    }
+
+    function nextHeroImage() {
+      currentImageIndex++;
+      showHeroImage(currentImageIndex);
+    }
+
+    function prevHeroImage() {
+      currentImageIndex--;
+      showHeroImage(currentImageIndex);
+    }
+
+    function currentHeroImage(n) {
+      currentImageIndex = n;
+      showHeroImage(currentImageIndex);
+    }
+
+    // Auto rotate gallery every 6 seconds
+    setInterval(() => {
+      nextHeroImage();
+    }, 6000);
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close mobile menu when a link is clicked
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.replace('light-theme', 'dark-theme');
+      themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      if (body.classList.contains('light-theme')) {
+        body.classList.replace('light-theme', 'dark-theme');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.replace('dark-theme', 'light-theme');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    window.addEventListener('load', () => {
+      preloader.style.opacity = '0';
+      setTimeout(() => { preloader.style.display = 'none'; }, 500);
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      scrollProgress.style.width = scrolled + "%";
+    });
+
+    // Reveal on scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('active');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/advanced-features.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,1302 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Ticketing | IMAM TRAVELS & TOURS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap&font-display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css files/ticketing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-theme">
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <header>
+    <nav>
+      <a href="index.html#home" class="logo">
+        <img src="assets/image/imam travel and tours logo.jpeg" alt="IMAM TRAVELS & TOURS"> 
+        IMAM TRAVELS &<span> TOURS</span>
+      </a>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="ticketing.html" class="active">Ticketing</a></li>
+        <li><a href="umrah_hajj.html">Umrah & Hajj</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="header-actions">
+        <div id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></div>
+        <a href="index.html#contact" class="header-cta" aria-label="Book a trip now">Book Now</a>
+        <div class="hamburger" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <section id="ticketing-hero" class="reveal active">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="index.html#home">Home</a> / <span>Ticketing</span>
+        </div>
+        <h1>World-Class Flight Ticketing</h1>
+        <p>Seamlessly connecting you to over 200+ destinations worldwide with premium service and exclusive fares.</p>
+      </div>
+    </section>
+
+    <section id="special-offers">
+      <div class="container">
+        <h2>Limited Time Flash Deals</h2>
+        <div class="offers-grid">
+          <div class="offer-card">
+            <div class="offer-badge">-35%</div>
+            <h3>Dubai Dream Package</h3>
+            <p>Round trip to Dubai</p>
+            <div class="offer-details">
+              <span class="price">PKR 45,999</span>
+              <span class="original-price">PKR 70,999</span>
+            </div>
+            <button class="offer-btn">Book Now</button>
+          </div>
+          <div class="offer-card">
+            <div class="offer-badge">-40%</div>
+            <h3>London Express</h3>
+            <p>Experience the UK</p>
+            <div class="offer-details">
+              <span class="price">PKR 78,500</span>
+              <span class="original-price">PKR 130,999</span>
+            </div>
+            <button class="offer-btn">Book Now</button>
+          </div>
+          <div class="offer-card">
+            <div class="offer-badge">-30%</div>
+            <h3>Bangkok Adventure</h3>
+            <p>Southeast Asia gateway</p>
+            <div class="offer-details">
+              <span class="price">PKR 32,999</span>
+              <span class="original-price">PKR 47,099</span>
+            </div>
+            <button class="offer-btn">Book Now</button>
+          </div>
+          <div class="offer-card">
+            <div class="offer-badge">-25%</div>
+            <h3>Istanbul Getaway</h3>
+            <p>Cultural immersion</p>
+            <div class="offer-details">
+              <span class="price">PKR 28,750</span>
+              <span class="original-price">PKR 38,333</span>
+            </div>
+            <button class="offer-btn">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking-engine">
+      <div class="container">
+        <div class="booking-card">
+          <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-color);">Book Your Flight</h2>
+          <form class="advanced-ticket-form" novalidate>
+            <!-- Trip Type Selection -->
+            <div class="trip-type-selector">
+              <label class="form-section-label">Select Trip Type</label>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input type="radio" id="round-trip" name="trip-type" value="round-trip" checked>
+                  <label for="round-trip"><i class="fas fa-sync-alt"></i> Round Trip</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" id="one-way" name="trip-type" value="one-way">
+                  <label for="one-way"><i class="fas fa-arrow-right"></i> One Way</label>
+                </div>
+                <div class="radio-option">
+                  <input type="radio" id="multi-city" name="trip-type" value="multi-city">
+                  <label for="multi-city"><i class="fas fa-map"></i> Multi-City</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Passenger Selection -->
+            <div class="passengers-selector">
+              <label class="form-section-label">Number of Passengers</label>
+              <div class="passengers-grid">
+                <div class="passenger-input">
+                  <label><i class="fas fa-user"></i> Adults<span class="hint">(Age 12+)</span></label>
+                  <div class="number-input">
+                    <button type="button" class="minus" aria-label="Decrease adults">−</button>
+                    <input type="number" class="adult-count" value="1" min="1" max="9" readonly>
+                    <button type="button" class="plus" aria-label="Increase adults">+</button>
+                  </div>
+                </div>
+                <div class="passenger-input">
+                  <label><i class="fas fa-child"></i> Children<span class="hint">(Age 2-11)</span></label>
+                  <div class="number-input">
+                    <button type="button" class="minus" aria-label="Decrease children">−</button>
+                    <input type="number" class="child-count" value="0" min="0" max="9" readonly>
+                    <button type="button" class="plus" aria-label="Increase children">+</button>
+                  </div>
+                </div>
+                <div class="passenger-input">
+                  <label><i class="fas fa-baby"></i> Infants<span class="hint">(Under 2)</span></label>
+                  <div class="number-input">
+                    <button type="button" class="minus" aria-label="Decrease infants">−</button>
+                    <input type="number" class="infant-count" value="0" min="0" max="5" readonly>
+                    <button type="button" class="plus" aria-label="Increase infants">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flight Details -->
+            <div class="form-section">
+              <label class="form-section-label">Flight Details</label>
+              <div class="form-grid">
+                <div class="input-group">
+                  <label for="departure-airport"><i class="fas fa-plane-departure"></i> Departure Airport *</label>
+                  <input type="text" id="departure-airport" list="airport-list" placeholder="Enter airport name or code..." required autocomplete="off">
+                  <span class="error-message" id="departure-error"></span>
+                </div>
+                
+                <div class="swap-btn-container">
+                  <button type="button" id="swap-locations" class="swap-btn" title="Swap departure and destination airports" aria-label="Swap airports">
+                    <i class="fas fa-exchange-alt"></i>
+                  </button>
+                </div>
+                
+                <div class="input-group">
+                  <label for="arrival-airport"><i class="fas fa-plane-arrival"></i> Destination Airport *</label>
+                  <input type="text" id="arrival-airport" list="airport-list" placeholder="Enter airport name or code..." required autocomplete="off">
+                  <span class="error-message" id="arrival-error"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Date & Class Selection -->
+            <div class="form-section">
+              <label class="form-section-label">Travel Dates & Class</label>
+              <div class="form-grid">
+                <div class="input-group">
+                  <label for="departure-date"><i class="fas fa-calendar-alt"></i> Departure Date *</label>
+                  <input type="date" id="departure-date" required>
+                  <span class="error-message" id="date-error"></span>
+                </div>
+                
+                <div class="input-group" id="return-date-group" style="display: block;">
+                  <label for="return-date"><i class="fas fa-calendar-check"></i> Return Date *</label>
+                  <input type="date" id="return-date" required>
+                  <span class="error-message" id="return-date-error"></span>
+                </div>
+                
+                <div class="input-group">
+                  <label for="cabin-class"><i class="fas fa-chair"></i> Cabin Class *</label>
+                  <select id="cabin-class" name="cabin-class" required>
+                    <option value="">-- Select Cabin Class --</option>
+                    <option value="economy">Economy</option>
+                    <option value="premium-economy">Premium Economy</option>
+                    <option value="business">Business Class</option>
+                    <option value="first">First Class</option>
+                  </select>
+                  <span class="error-message" id="class-error"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+              <button type="submit" class="cta-button" id="search-btn">
+                <i class="fas fa-search"></i> Search Best Fares
+              </button>
+              <button type="reset" class="btn-secondary">
+                <i class="fas fa-redo"></i> Clear Form
+              </button>
+            </div>
+            
+            <p class="form-note">* Required fields</p>
+          </form>
+          <!-- Airport Datalist for autocomplete -->
+          <datalist id="airport-list"></datalist>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH RESULTS SECTION -->
+    <section id="search-results" class="reveal">
+      <div class="container">
+        <h2>Search Results</h2>
+        <div id="search-results-container"></div>
+      </div>
+    </section>
+    <section id="ticketing-info" class="reveal">
+      <div class="container">
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-check-circle"></i>
+            <h3>Instant Confirmation</h3>
+            <p>Get your e-ticket instantly via email and SMS after booking.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>Our ticketing experts are here to help with changes and cancellations.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-tag"></i>
+            <h3>Exclusive Rates</h3>
+            <p>Access special airline deals available only through our agency.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Travel Insurance</h3>
+            <p>Comprehensive coverage for flight delays, cancellations, and medical emergencies.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-bed"></i>
+            <h3>Hotel Packages</h3>
+            <p>Book flights + hotels together for incredible savings up to 40% off.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-passport"></i>
+            <h3>Visa Assistance</h3>
+            <p>Expert guidance on visa requirements and applications for worldwide destinations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOTEL BOOKING SECTION -->
+    <section id="hotels" class="reveal" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+      <div class="container">
+        <h2 style="color: white; text-align: center; margin-bottom: 2rem;">Book Hotels Worldwide</h2>
+        <div class="hotel-booking-form" style="background: white; padding: 2rem; border-radius: 15px; max-width: 100%;">
+          <div class="form-grid" style="margin-bottom: 1.5rem;">
+            <div class="input-group">
+              <label><i class="fas fa-map-marker-alt"></i> Destination City</label>
+              <input type="text" placeholder="Enter city name..." list="popular-cities">
+              <datalist id="popular-cities">
+                <option value="Dubai">
+                <option value="London">
+                <option value="Bangkok">
+                <option value="Paris">
+                <option value="Istanbul">
+                <option value="New York">
+                <option value="Singapore">
+                <option value="Tokyo">
+              </datalist>
+            </div>
+            <div class="input-group">
+              <label><i class="fas fa-calendar-check-alt"></i> Check-in</label>
+              <input type="date" min="" id="hotel-checkin">
+            </div>
+            <div class="input-group">
+              <label><i class="fas fa-door-open"></i> Check-out</label>
+              <input type="date" min="" id="hotel-checkout">
+            </div>
+            <div class="input-group">
+              <label><i class="fas fa-door-closed"></i> Rooms</label>
+              <select>
+                <option>1 Room</option>
+                <option>2 Rooms</option>
+                <option>3 Rooms</option>
+                <option>4+ Rooms</option>
+              </select>
+            </div>
+          </div>
+          <button class="cta-button" style="width: 100%;">Search Hotels</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY BOOK WITH US SECTION -->
+    <section id="why-us" class="reveal">
+      <div class="container">
+        <h2>Why Book With IMAM TRAVELS & TOURS?</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-check-double"></i>
+            </div>
+            <h3>Best Price Guarantee</h3>
+            <p>We guarantee the lowest fares. If you find a cheaper option, we'll match it and give you an extra discount!</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>24/7 Customer Support</h3>
+            <p>Our multilingual team is available round the clock to assist with booking, changes, and emergencies.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3>100% Secure Booking</h3>
+            <p>Your personal and payment information is fully protected with latest SSL encryption technology.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Instant E-Tickets</h3>
+            <p>Receive your boarding pass within seconds via email. No waiting, no hassle.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <h3>Loyalty Rewards</h3>
+            <p>Earn points on every booking and redeem them for discounts on future flights and hotels.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Global Network</h3>
+            <p>Access to 500+ airlines and 100,000+ hotel properties worldwide at guaranteed best prices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR ROUTES SECTION -->
+    <section id="popular-routes" class="reveal">
+      <div class="container">
+        <h2>Popular Routes from Pakistan</h2>
+        <div class="routes-grid">
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-from">KHI</span>
+              <i class="fas fa-plane"></i>
+              <span class="route-to">DXB</span>
+            </div>
+            <h3>Karachi &rarr; Dubai</h3>
+            <div class="route-meta">
+              <span><i class="fas fa-clock"></i> 2h 30m</span>
+              <span><i class="fas fa-ticket-alt"></i> From PKR 12,500</span>
+            </div>
+            <a href="#booking-engine" class="route-button">Book Now</a>
+          </div>
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-from">ISL</span>
+              <i class="fas fa-plane"></i>
+              <span class="route-to">LHR</span>
+            </div>
+            <h3>Islamabad &rarr; London</h3>
+            <div class="route-meta">
+              <span><i class="fas fa-clock"></i> 8h 15m</span>
+              <span><i class="fas fa-ticket-alt"></i> From PKR 65,000</span>
+            </div>
+            <a href="#booking-engine" class="route-button">Book Now</a>
+          </div>
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-from">LHE</span>
+              <i class="fas fa-plane"></i>
+              <span class="route-to">JED</span>
+            </div>
+            <h3>Lahore &rarr; Jeddah</h3>
+            <div class="route-meta">
+              <span><i class="fas fa-clock"></i> 4h 20m</span>
+              <span><i class="fas fa-ticket-alt"></i> From PKR 18,900</span>
+            </div>
+            <a href="#booking-engine" class="route-button">Book Now</a>
+          </div>
+          <div class="route-card">
+            <div class="route-header">
+              <span class="route-from">KHI</span>
+              <i class="fas fa-plane"></i>
+              <span class="route-to">BKK</span>
+            </div>
+            <h3>Karachi &rarr; Bangkok</h3>
+            <div class="route-meta">
+              <span><i class="fas fa-clock"></i> 5h 45m</span>
+              <span><i class="fas fa-ticket-alt"></i> From PKR 28,500</span>
+            </div>
+            <a href="#booking-engine" class="route-button">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKETING BENEFITS SECTION -->
+    <section id="ticketing-benefits" class="reveal">
+      <div class="container">
+        <h2>Why Book Tickets Through Us?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-percent"></i></div>
+            <h3>Best Price Guarantee</h3>
+            <p>We match or beat any competitor's price for the same flight and class.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+            <h3>Secure Payment</h3>
+            <p>100% secure payment gateway with advanced encryption technology.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-exchange-alt"></i></div>
+            <h3>Flexible Changes</h3>
+            <p>Easy rebooking and date changes with minimal or no additional charges.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon"><i class="fas fa-medal"></i></div>
+            <h3>IATA Approved</h3>
+            <p>Certified IATA agent with 15+ years of ticketing experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AIRLINE PARTNERS -->
+    <section id="airline-partners" class="reveal">
+      <div class="container">
+        <h2>Our Trusted Airline Partners</h2>
+        <p class="section-subtitle">Access fares from 150+ international airlines</p>
+        <div class="airlines-showcase">
+          <div class="airline-badge">
+            <i class="fas fa-plane" style="color: #003d82;"></i>
+            <p>Emirates</p>
+          </div>
+          <div class="airline-badge">
+            <i class="fas fa-plane" style="color: #500084;"></i>
+            <p>Qatar Airways</p>
+          </div>
+          <div class="airline-badge">
+            <i class="fas fa-plane" style="color: #ce1126;"></i>
+            <p>Turkish Airlines</p>
+          </div>
+          <div class="airline-badge">
+            <i class="fas fa-plane" style="color: #003da5;"></i>
+            <p>Lufthansa</p>
+          </div>
+          <div class="airline-badge">
+            <i class="fas fa-plane" style="color: #1e3932;"></i>
+            <p>PIA</p>
+          </div>
+          <div class="airline-badge">
+            <i class="fas fa-plane" style="color: #0066cc;"></i>
+            <p>British Airways</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="ticketing-testimonials" class="reveal">
+      <div class="container">
+        <h2>What Our Travelers Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Booking was incredibly easy! Got the best price for my family trip to Dubai. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/50?u=traveler1">
+              <div>
+                <p class="name">Ahmed Khan</p>
+                <p class="title">Dubai Trip 2026</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Their customer support helped me change my flight last minute without any hassle. Great service!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/50?u=traveler2">
+              <div>
+                <p class="name">Fatima Ali</p>
+                <p class="title">London Business Trip</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Saved a lot of money compared to booking directly. Will definitely book again with IMAM TRAVELS!"</p>
+            <div class="testimonial-author">
+              <img src="https://i.pravatar.cc/50?u=traveler3">
+              <div>
+                <p class="name">Hassan Raza</p>
+                <p class="title">Bangkok Vacation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="ticketing-faq" class="reveal">
+      <div class="container">
+        <h2>Ticketing FAQs</h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">How long does it take to receive my e-ticket? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>E-tickets are usually sent within 1-2 hours of booking confirmation. You'll receive them via email and SMS immediately after payment processing.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I change my flight details after booking? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>Yes! Most tickets can be changed subject to airline policies. Some may have modification fees. Contact our support team for assistance.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What is your cancellation policy? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>Cancellation policies vary by airline and ticket type. Non-refundable tickets may be converted to credit. Full refunds are available for refundable tickets.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you offer group booking discounts? <i class="fas fa-plus"></i></button>
+            <div class="faq-answer">
+              <p>Absolutely! For groups of 10 or more, we offer special discounted rates. Please contact our group travel specialist for a customized quote.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <a href="index.html#home" class="logo">
+          <img src="assets/image/imam travel and tours logo.jpeg" alt="IMAM TRAVELS & TOURS"> 
+          IMAM TRAVELS &<span> TOURS</span>
+        </a>
+        <p>Exploring the world one destination at a time. Join us for unforgettable journeys.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest travel deals.</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="Your Email">
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 IMAM TRAVELS & TOURS. Made with <i class="fas fa-heart" style="color: var(--accent-color);"></i> for travelers.</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links a');
+    const preloader = document.getElementById('preloader');
+    const scrollProgress = document.getElementById('scroll-progress');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+    
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.replace('light-theme', 'dark-theme');
+      if(themeToggle) themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    if(themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        if (body.classList.contains('light-theme')) {
+          body.classList.replace('light-theme', 'dark-theme');
+          themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+          localStorage.setItem('theme', 'dark');
+        } else {
+          body.classList.replace('dark-theme', 'light-theme');
+          themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+          localStorage.setItem('theme', 'light');
+        }
+      });
+    }
+
+    window.addEventListener('load', () => {
+      if(preloader) {
+        preloader.style.opacity = '0';
+        setTimeout(() => { preloader.style.display = 'none'; }, 500);
+      }
+    });
+
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if(header) header.classList.toggle('scrolled', window.scrollY > 50);
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if(scrollProgress) scrollProgress.style.width = scrolled + "%";
+    });
+
+    const airports = [
+        // PAKISTAN - DOMESTIC AIRPORTS
+        "Karachi (KHI) - Jinnah International", 
+        "Lahore (LHE) - Allama Iqbal International",
+        "Islamabad (ISB) - Islamabad International", 
+        "Rawalpindi (RWP) - Benazir Bhutto International",
+        "Peshawar (PEW) - Bacha Khan International",
+        "Multan (MUX) - Multan International",
+        "Faisalabad (FSD) - Faisalabad International",
+        "Sialkot (SKT) - Sialkot International",
+        "Quetta (QTA) - Quetta Airport",
+        "Gilgit (GIL) - Gilgit Airport",
+        "Skardu (SKD) - Skardu Airport",
+        "Rahim Yar Khan (RYK) - Rahim Yar Khan Airport",
+        "Gwadar (GWD) - Gwadar International",
+        
+        // MIDDLE EAST - GULF REGION
+        "Dubai (DXB) - Dubai International",
+        "Abu Dhabi (AUH) - Abu Dhabi International",
+        "Jeddah (JED) - King Abdulaziz International",
+        "Riyadh (RUH) - King Khalid International",
+        "Dammam (DMM) - King Fahd International",
+        "Medina (MED) - Prince Mohammad bin Abdulaziz",
+        "Doha (DOH) - Hamad International",
+        "Kuwait (KWI) - Kuwait International",
+        "Muscat (MCT) - Muscat International",
+        "Bahrain (BAH) - Bahrain International",
+        
+        // EUROPE - UK & IRELAND
+        "London Heathrow (LHR) - Heathrow",
+        "London Gatwick (LGW) - Gatwick",
+        "London Stansted (STN) - Stansted",
+        "London Luton (LTN) - Luton",
+        "Manchester (MAN) - Manchester Airport",
+        "Birmingham (BHX) - Birmingham Airport",
+        "Glasgow (GLA) - Glasgow Airport",
+        "Edinburgh (EDI) - Edinburgh Airport",
+        "Belfast (BFS) - Belfast International",
+        "Dublin (DUB) - Dublin Airport",
+        
+        // EUROPE - CONTINENTAL
+        "Paris (CDG) - Charles de Gaulle",
+        "Paris (ORY) - Orly",
+        "Frankfurt (FRA) - Frankfurt",
+        "Munich (MUC) - Munich",
+        "Berlin (BER) - Berlin Brandenburg",
+        "Amsterdam (AMS) - Amsterdam Schiphol",
+        "Brussels (BRU) - Brussels",
+        "Zurich (ZRH) - Zurich",
+        "Vienna (VIE) - Vienna",
+        "Prague (PRG) - Prague",
+        "Rome (FCO) - Fiumicino",
+        "Milan (MXP) - Malpensa",
+        "Barcelona (BCN) - Barcelona",
+        "Madrid (MAD) - Madrid Barajas",
+        "Lisbon (LIS) - Lisbon",
+        "Istanbul (IST) - Istanbul",
+        "Athens (ATH) - Athens",
+        
+        // NORTH AMERICA - USA
+        "New York (JFK) - JFK International",
+        "New York (LGA) - LaGuardia",
+        "New York (EWR) - Newark",
+        "Los Angeles (LAX) - Los Angeles International",
+        "Chicago (ORD) - O'Hare International",
+        "Houston (IAH) - George Bush",
+        "Dallas (DFW) - Dallas Fort Worth",
+        "Miami (MIA) - Miami International",
+        "Atlanta (ATL) - Hartsfield Jackson",
+        "Denver (DEN) - Denver International",
+        "San Francisco (SFO) - San Francisco",
+        "Seattle (SEA) - Seattle Tacoma",
+        "Boston (BOS) - Boston Logan",
+        "Washington (IAD) - Washington Dulles",
+        
+        // NORTH AMERICA - CANADA
+        "Toronto (YYZ) - Pearson International",
+        "Vancouver (YVR) - Vancouver",
+        "Montreal (YUL) - Montreal",
+        "Calgary (YYC) - Calgary",
+        "Edmonton (YEG) - Edmonton",
+        
+        // SOUTH AMERICA
+        "Sao Paulo (GIG) - Rio de Janeiro",
+        "Buenos Aires (EZE) - Ministro Pistarini",
+        
+        // ASIA - SOUTHEAST
+        "Bangkok (BKK) - Suvarnabhumi",
+        "Kuala Lumpur (KUL) - Kuala Lumpur International",
+        "Singapore (SIN) - Singapore Changi",
+        "Hong Kong (HKG) - Hong Kong",
+        "Manila (MNL) - Ninoy Aquino",
+        "Jakarta (CGK) - Soekarno Hatta",
+        "Ho Chi Minh City (SGN) - Tan Son Nhat",
+        "Hanoi (HAN) - Noi Bai",
+        "Phuket (HKT) - Phuket International",
+        
+        // ASIA - EAST
+        "Tokyo (NRT) - Narita",
+        "Tokyo (HND) - Haneda",
+        "Shanghai (PVG) - Pudong",
+        "Beijing (PEK) - Capital",
+        "Seoul (ICN) - Incheon",
+        "Hong Kong (HKG) - Hong Kong",
+        "Taipei (TPE) - Taiwan Taoyuan",
+        
+        // ASIA - SOUTH
+        "Delhi (DEL) - Indira Gandhi",
+        "Mumbai (BOM) - Bombay",
+        "Bangalore (BLR) - Kempegowda",
+        "Chennai (MAA) - Chennai",
+        "Kolkata (CCU) - Netaji Subhas Chandra",
+        "Hyderabad (HYD) - Rajiv Gandhi",
+        
+        // AUSTRALIA & OCEANIA
+        "Sydney (SYD) - Kingsford Smith",
+        "Melbourne (MEL) - Melbourne",
+        "Brisbane (BNE) - Brisbane",
+        "Perth (PER) - Perth",
+        "Auckland (AKL) - Auckland"
+    ];
+
+    // Premium tools handlers
+    function openBaggageCalculator() {
+      const modal = document.getElementById('baggageModal');
+      if (modal) modal.style.display = 'flex';
+      else alert('ðŸ§³ Baggage Calculator:\n\nâ€¢ Economy: 20kg (1 bag)\nâ€¢ Business: 32kg (2 bags)\nâ€¢ First: 40kg (3 bags)');
+    }
+
+    function openLoyaltyTracker() {
+      const modal = document.getElementById('loyaltyModal');
+      if (modal) modal.style.display = 'flex';
+      else alert('â­ Loyalty Tracker:\n\nYour Miles: 12,450\nRedeem for: 1 Round Trip Ticket\nNext Benefit Unlocks at 15,000 miles');
+    }
+
+    function openPriceAlert() {
+      const modal = document.getElementById('priceAlertModal');
+      if (modal) modal.style.display = 'flex';
+      else alert('ðŸ”” Price Alert Set!\n\nWe\'ll notify you when fares to your destination drop!');
+    }
+
+    function openPaymentPlans() {
+      const modal = document.getElementById('paymentPlansModal');
+      if (modal) modal.style.display = 'flex';
+      else alert('ðŸ’³ Payment Plans\n\nâ€¢ 3-month: 3 payments\nâ€¢ 6-month: 6 payments\nâ€¢ 12-month: 12 payments\n\nZero interest available!');
+    }
+
+    // Passenger counter handlers
+    document.querySelectorAll('.number-input').forEach(counter => {
+      try {
+        const input = counter.querySelector('input');
+        const minusBtn = counter.querySelector('.minus');
+        const plusBtn = counter.querySelector('.plus');
+        
+        if (minusBtn && input) {
+          minusBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const val = parseInt(input.value) || 0;
+            const min = parseInt(input.min) || 0;
+            if (val > min) input.value = val - 1;
+          });
+        }
+        
+        if (plusBtn && input) {
+          plusBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const val = parseInt(input.value) || 0;
+            const max = parseInt(input.max) || 9;
+            if (val < max) input.value = val + 1;
+          });
+        }
+      } catch (e) {
+        console.warn('Passenger counter error:', e);
+      }
+    });
+
+    // Trip type selector - show/hide return date
+    const tripTypeRadios = document.querySelectorAll('input[name="trip-type"]');
+    const returnDateGroup = document.getElementById('return-date-group');
+    
+    tripTypeRadios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        if (returnDateGroup) {
+          returnDateGroup.style.display = radio.value === 'one-way' ? 'none' : 'block';
+        }
+      });
+    });
+
+    // Swap locations
+    const swapBtn = document.getElementById('swap-locations');
+    if (swapBtn) {
+      swapBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const inputs = document.querySelectorAll('.form-grid .input-group input[type="text"]');
+        if (inputs.length >= 2) {
+          const temp = inputs[0].value;
+          inputs[0].value = inputs[1].value;
+          inputs[1].value = temp;
+        }
+      });
+    }
+
+    function loadAirports() {
+        const list = document.getElementById('airport-list');
+        if (!list) return;
+        const fragment = document.createDocumentFragment();
+        airports.forEach(airport => {
+            const option = document.createElement('option');
+            option.value = airport;
+            fragment.appendChild(option);
+        });
+        list.appendChild(fragment);
+    }
+
+    if (window.requestIdleCallback) { requestIdleCallback(loadAirports); } 
+    else { setTimeout(loadAirports, 1000); }
+    
+    // Force hide preloader after 3 seconds max
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+      }
+    }, 3000);
+
+    // ========== REVEAL ANIMATION ON SCROLL ==========
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(element => {
+      revealObserver.observe(element);
+    });
+
+    // ============== PROFESSIONAL FORM VALIDATION & HANDLING ==============
+    
+    // Passenger Counter Management
+    function initializePassengerCounters() {
+      const counterGroups = {
+        adult: { selector: '.adult-count', min: 1, max: 9 },
+        child: { selector: '.child-count', min: 0, max: 9 },
+        infant: { selector: '.infant-count', min: 0, max: 5 }
+      };
+
+      Object.entries(counterGroups).forEach(([type, config]) => {
+        const input = document.querySelector(config.selector);
+        if (input) {
+          const container = input.closest('.number-input');
+          const minusBtn = container.querySelector('.minus');
+          const plusBtn = container.querySelector('.plus');
+
+          minusBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const current = parseInt(input.value);
+            if (current > config.min) input.value = current - 1;
+          });
+
+          plusBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const current = parseInt(input.value);
+            if (current < config.max) input.value = current + 1;
+          });
+        }
+      });
+    }
+
+    // Trip Type and Date Management
+    function initializeTripTypeHandler() {
+      const tripTypeRadios = document.querySelectorAll('input[name="trip-type"]');
+      const returnDateGroup = document.getElementById('return-date-group');
+      const returnDateInput = document.getElementById('return-date');
+
+      tripTypeRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+          if (radio.value === 'one-way') {
+            returnDateGroup.style.display = 'none';
+            returnDateInput.removeAttribute('required');
+          } else {
+            returnDateGroup.style.display = 'block';
+            returnDateInput.setAttribute('required', '');
+          }
+        });
+      });
+    }
+
+    // Swap Airports Function
+    function initializeSwapButton() {
+      const swapBtn = document.getElementById('swap-locations');
+      if (swapBtn) {
+        swapBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const departureInput = document.getElementById('departure-airport');
+          const arrivalInput = document.getElementById('arrival-airport');
+          
+          if (departureInput && arrivalInput) {
+            const temp = departureInput.value;
+            departureInput.value = arrivalInput.value;
+            arrivalInput.value = temp;
+          }
+        });
+      }
+    }
+
+    // Form Validation
+    function validateForm(form) {
+      const errors = {};
+      const departureAirport = document.getElementById('departure-airport').value.trim();
+      const arrivalAirport = document.getElementById('arrival-airport').value.trim();
+      const departureDate = document.getElementById('departure-date').value;
+      const cabinClass = document.getElementById('cabin-class').value;
+
+      // Clear previous errors
+      document.querySelectorAll('.input-group.error').forEach(group => {
+        group.classList.remove('error');
+      });
+      document.querySelectorAll('.error-message').forEach(msg => {
+        msg.textContent = '';
+      });
+
+      // Validation logic
+      if (!departureAirport) {
+        errors.departure = 'Please select a departure airport';
+        document.getElementById('departure-airport').closest('.input-group').classList.add('error');
+      }
+
+      if (!arrivalAirport) {
+        errors.arrival = 'Please select a destination airport';
+        document.getElementById('arrival-airport').closest('.input-group').classList.add('error');
+      }
+
+      if (departureAirport === arrivalAirport && departureAirport !== '') {
+        errors.same = 'Departure and destination cannot be the same';
+        document.getElementById('departure-airport').closest('.input-group').classList.add('error');
+      }
+
+      if (!departureDate) {
+        errors.date = 'Please select a departure date';
+        document.getElementById('departure-date').closest('.input-group').classList.add('error');
+      }
+
+      if (!cabinClass) {
+        errors.class = 'Please select a cabin class';
+        document.getElementById('cabin-class').closest('.input-group').classList.add('error');
+      }
+
+      const returnDate = document.getElementById('return-date').value;
+      if (returnDate && departureDate && returnDate < departureDate) {
+        errors.returnDate = 'Return date must be after departure date';
+        document.getElementById('return-date').closest('.input-group').classList.add('error');
+      }
+
+      // Display errors
+      Object.entries(errors).forEach(([key, message]) => {
+        const errorElement = document.getElementById(key + '-error');
+        if (errorElement) errorElement.textContent = message;
+      });
+
+      return Object.keys(errors).length === 0;
+    }
+
+    // Notification Helper (as fallback)
+    function showNotification(message, type = 'success') {
+      if (typeof window.showCustomNotification === 'function') {
+        window.showCustomNotification(message, type);
+      } else {
+        alert(message);
+      }
+    }
+
+    // Form Submission
+    function initializeFormSubmission() {
+      const form = document.querySelector('.advanced-ticket-form');
+      const searchBtn = document.getElementById('search-btn');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          if (validateForm(form)) {
+            searchBtn.disabled = true;
+            searchBtn.innerHTML = '<i class="fas fa-spinner"></i> Searching...';
+
+            setTimeout(() => {
+              const adults = document.querySelector('.adult-count').value;
+              const from = document.getElementById('departure-airport').value;
+              const to = document.getElementById('arrival-airport').value;
+              const departureDate = document.getElementById('departure-date').value;
+              const returnDate = document.getElementById('return-date').value;
+              const cabinClass = document.getElementById('cabin-class').value;
+
+              // Show search results
+              displaySearchResults(from, to, departureDate, returnDate, cabinClass, adults);
+
+              searchBtn.disabled = false;
+              searchBtn.innerHTML = '<i class="fas fa-search"></i> Search Best Fares';
+            }, 1500);
+          } else {
+            showNotification('⚠️ Please fill all required fields', 'error', 3000);
+          }
+        });
+      }
+    }
+
+    // Display Search Results
+    function displaySearchResults(from, to, departureDate, returnDate, cabinClass, adults) {
+      const resultsSection = document.getElementById('search-results');
+      const resultsGrid = document.getElementById('search-results-container');
+      const searchSummary = document.getElementById('search-summary');
+      const noResults = document.getElementById('no-results');
+
+      // Update search summary
+      const tripType = document.querySelector('input[name="trip-type"]:checked').value;
+      const summaryText = `${tripType === 'round-trip' ? 'Round-trip' : 'One-way'} flights from ${from} to ${to} on ${new Date(departureDate).toLocaleDateString()}${returnDate ? ' - ' + new Date(returnDate).toLocaleDateString() : ''} (${adults} passenger${adults > 1 ? 's' : ''})`;
+      searchSummary.textContent = summaryText;
+
+      // Mock flight data
+      const mockFlights = [
+        {
+          airline: 'Emirates',
+          logo: '✈️',
+          flightNumber: 'EK 603',
+          departure: { time: '08:30', code: 'KHI', city: 'Karachi' },
+          arrival: { time: '12:45', code: 'DXB', city: 'Dubai' },
+          duration: '4h 15m',
+          stops: 'Non-stop',
+          price: 'PKR 45,999',
+          originalPrice: 'PKR 52,999',
+          features: ['Free meal', 'Entertainment', 'WiFi']
+        },
+        {
+          airline: 'Qatar Airways',
+          logo: '🛩️',
+          flightNumber: 'QR 614',
+          departure: { time: '14:20', code: 'KHI', city: 'Karachi' },
+          arrival: { time: '18:35', code: 'DXB', city: 'Dubai' },
+          duration: '4h 15m',
+          stops: 'Non-stop',
+          price: 'PKR 48,500',
+          originalPrice: 'PKR 55,500',
+          features: ['Premium meal', 'Entertainment', 'WiFi', 'Extra legroom']
+        },
+        {
+          airline: 'Turkish Airlines',
+          logo: '🛫',
+          flightNumber: 'TK 709',
+          departure: { time: '22:15', code: 'KHI', city: 'Karachi' },
+          arrival: { time: '02:30', code: 'DXB', city: 'Dubai' },
+          duration: '4h 15m',
+          stops: 'Non-stop',
+          price: 'PKR 42,999',
+          originalPrice: 'PKR 49,999',
+          features: ['Free meal', 'Entertainment', 'WiFi']
+        },
+        {
+          airline: 'PIA',
+          logo: '🇵🇰',
+          flightNumber: 'PK 301',
+          departure: { time: '06:00', code: 'KHI', city: 'Karachi' },
+          arrival: { time: '10:15', code: 'DXB', city: 'Dubai' },
+          duration: '4h 15m',
+          stops: 'Non-stop',
+          price: 'PKR 38,500',
+          originalPrice: 'PKR 45,500',
+          features: ['Free meal', 'WiFi']
+        }
+      ];
+
+      // Clear previous results
+      resultsGrid.innerHTML = '';
+
+      // Generate flight cards
+      mockFlights.forEach(flight => {
+        const flightCard = document.createElement('div');
+        flightCard.className = 'flight-card';
+        flightCard.innerHTML = `
+          <div class="flight-header">
+            <div class="airline-info">
+              <div class="airline-logo">${flight.logo}</div>
+              <div class="airline-details">
+                <h3>${flight.airline}</h3>
+                <p>${flight.flightNumber}</p>
+              </div>
+            </div>
+            <div class="flight-price">
+              <span class="price">${flight.price}</span>
+              <span class="original-price">${flight.originalPrice}</span>
+            </div>
+          </div>
+          <div class="flight-details">
+            <div class="flight-departure">
+              <div class="flight-time">${flight.departure.time}</div>
+              <div class="flight-date">${new Date(departureDate).toLocaleDateString()}</div>
+              <div class="flight-location">${flight.departure.city}</div>
+              <div class="flight-code">${flight.departure.code}</div>
+            </div>
+            <div class="flight-duration">
+              <div class="duration">${flight.duration}</div>
+              <div class="stops">${flight.stops}</div>
+            </div>
+            <div class="flight-arrival">
+              <div class="flight-time">${flight.arrival.time}</div>
+              <div class="flight-date">${new Date(departureDate).toLocaleDateString()}</div>
+              <div class="flight-location">${flight.arrival.city}</div>
+              <div class="flight-code">${flight.arrival.code}</div>
+            </div>
+          </div>
+          <div class="flight-footer">
+            <div class="flight-features">
+              ${flight.features.map(feature => `<span class="feature-tag">${feature}</span>`).join('')}
+            </div>
+            <button class="book-button" onclick="bookFlight('${flight.airline}', '${flight.flightNumber}', '${flight.price}')">
+              <i class="fas fa-plane"></i> Book Now
+            </button>
+          </div>
+        `;
+        resultsGrid.appendChild(flightCard);
+      });
+
+      // Show results section
+      resultsSection.style.display = 'block';
+      setTimeout(() => {
+        resultsSection.classList.add('active');
+      }, 100);
+      noResults.style.display = 'none';
+
+      // Scroll to results
+      resultsSection.scrollIntoView({ behavior: 'smooth' });
+
+      showNotification('✅ Found 4 flights matching your criteria!', 'success', 3000);
+    }
+
+    // Book Flight Function
+    function bookFlight(airline, flightNumber, price) {
+      showNotification(`🎫 Booking ${airline} ${flightNumber} for ${price}...`, 'success', 3000);
+      // Here you would typically redirect to booking page or open booking modal
+    }
+
+    // Initialize all features
+    document.addEventListener('DOMContentLoaded', () => {
+      // Load airports
+      if (window.requestIdleCallback) { requestIdleCallback(loadAirports); } 
+      else { setTimeout(loadAirports, 100); }
+      
+      // Initialize form handlers
+      initializePassengerCounters();
+      initializeTripTypeHandler();
+      initializeSwapButton();
+      initializeFormSubmission();
+      
+      // Set minimum dates
+      const today = new Date().toISOString().split('T')[0];
+      const depDateInput = document.getElementById('departure-date');
+      const retDateInput = document.getElementById('return-date');
+      if (depDateInput) {
+        depDateInput.setAttribute('min', today);
+        depDateInput.addEventListener('change', () => {
+          if(retDateInput && depDateInput.value) retDateInput.setAttribute('min', depDateInput.value);
+        });
+      }
+      if (retDateInput) retDateInput.setAttribute('min', today);
+    });
+
+    // Force hide preloader after 3 seconds max
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+      }
+    }, 3000);
+  </script>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/advanced-features.js" defer></script>
+
+  <!-- Missing Modals -->
+  <div id="flightTrackerModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fas fa-plane"></i> Flight Tracker</h2>
+        <span class="close" onclick="closeFlightTracker()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="input-group">
+          <label for="flightNumber">Flight Number:</label>
+          <input type="text" id="flightNumber" placeholder="e.g., PK-301">
+        </div>
+        <button class="btn btn-primary" onclick="trackFlight()">Track Flight</button>
+        <div id="flightResult" style="margin-top: 20px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="baggageModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fas fa-suitcase"></i> Baggage Information</h2>
+        <span class="close" onclick="closeBaggageModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <h3>Cabin Baggage Allowance</h3>
+        <p>7kg for Economy, 10kg for Business</p>
+        <h3>Checked Baggage Allowance</h3>
+        <p>20kg for Economy, 30kg for Business</p>
+        <p style="color: #e74c3c; margin-top: 15px;"><strong>Note:</strong> Excess baggage charges apply.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="loyaltyModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fas fa-star"></i> Loyalty Program</h2>
+        <span class="close" onclick="closeLoyaltyModal()">&times;</span>
+      </div>
+      <div class="modal-body">
+        <h3>Earn Miles on Every Flight</h3>
+        <ul>
+          <li>1 mile per $1 spent</li>
+          <li>Bonus miles for premium cabins</li>
+          <li>Redeem for free flights and upgrades</li>
+        </ul>
+        <button class="btn btn-primary" style="margin-top: 15px;">Join Now</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
